@@ -54,7 +54,7 @@ export class AppComponent {
     title: 'Stickers',
     price: 80000,
     description: 'bla bla bla bla bla'
-  },
+  }
 ];
 
   addItem() {
@@ -63,5 +63,10 @@ export class AppComponent {
 
   deleteItem(index: number) {
     this.items.splice(index, 1);
+  }
+
+  clickProduct(id: number) {
+    console.log('product');
+    console.log(id);
   }
 }
